@@ -8,9 +8,7 @@ $hijau = "\e[92m";
 $merah = "\e[91m";
 
 echo " ~~~~~~ ‌𝓐‌𝔂‌𝓶𝓪‌𝓷 ‌𝓔‌𝓰‌𝔂 ~~~~~\n  ";
-echo ' Website Mu: ';
-$url = "‌https://falcon-plus.blogspot.com"; 
-echo ' Jumlah Visitor: ';
+$url = 'https://falcon-plus.blogspot.com'; 
 $max = "9999999999999999";
 
 error_reporting(0);
