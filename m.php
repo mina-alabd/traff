@@ -8,8 +8,7 @@ $hijau = "\e[92m";
 $merah = "\e[91m";
 
 echo " ~~~~~~ ‌𝓐‌𝔂‌𝓶𝓪‌𝓷 ‌𝓔‌𝓰‌𝔂 ~~~~~\n  ";
-echo ' Website Mu: ';
-$url = trim(fgets(STDIN));
+$url = "https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html";
 $max = "9999999999999999";
 
 error_reporting(0);
