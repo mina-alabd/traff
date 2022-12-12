@@ -1,4 +1,4 @@
-
+<?php
 $biru = "\e[34m";
 $kuning = "\e[33m";
 $cyan = "\e[96m";
@@ -258,3 +258,4 @@ for($i = 1; $i < $max+1; $i++) {
 	$class = new autovisitor($url);
 	echo $i.". VISITOR TERKIRIM MELALUI REFERER - [".$class->jalankan()."\n";
 }}
+?> 
