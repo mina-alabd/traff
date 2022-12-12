@@ -10,12 +10,6 @@ echo file_get_contents("https://raw.githubusercontent.com/aymamma/pas-trafct/mai
 echo " \n \n";
 
 
-echo "   PASSWORD  = ";
-   $password = trim(fgets(STDIN));
-if ($password !== file_get_contents("https://raw.githubusercontent.com/aymamma/pas-trafct/main/aymantitel") ){
-     echo "$merah ERROR  PASSWORD \n \n";
-     system("sleep 2");
-} else {
       echo "Login Succesfully\n";
      system("clear");
 system("sleep 2");
@@ -257,5 +251,5 @@ class autovisitor extends Random_UA {
 for($i = 1; $i < $max+1; $i++) {
 	$class = new autovisitor($url);
 	echo $i.". VISITOR TERKIRIM MELALUI REFERER - [".$class->jalankan()."\n";
-}}
-?> 
+}
+?>
