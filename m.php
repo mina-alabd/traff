@@ -8,8 +8,7 @@ $hijau = "\e[92m";
 $merah = "\e[91m";
 
 echo " ~~~~~~ ‌𝓐‌𝔂‌𝓶𝓪‌𝓷 ‌𝓔‌𝓰‌𝔂 ~~~~~\n  ";
-$url = file_get_contents("https://pastebin.com/raw/X3NQe5C2"); 
-//echo $url; 
+$url == file_get_contents("https://pastebin.com/raw/X3NQe5C2");
 $max = "9999999999999999";
 
 error_reporting(0);
