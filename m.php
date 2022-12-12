@@ -1,15 +1,32 @@
-<?php
-// Warna Terminal
+
 $biru = "\e[34m";
 $kuning = "\e[33m";
 $cyan = "\e[96m";
 $magenta = "\e[35m";
 $hijau = "\e[92m";
 $merah = "\e[91m";
+echo file_get_contents("https://raw.githubusercontent.com/aymamma/pas-trafct/main/aymantitel");
 
-echo " ~~~~~~ ‌𝓐‌𝔂‌𝓶𝓪‌𝓷 ‌𝓔‌𝓰‌𝔂 ~~~~~\n  ";
-$url = "https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html";
-$max = "9999999999999999";
+echo " \n \n";
+
+
+echo "   PASSWORD  = ";
+   $password = trim(fgets(STDIN));
+if ($password !== file_get_contents("https://raw.githubusercontent.com/aymamma/pas-trafct/main/aymantitel") ){
+     echo "$merah ERROR  PASSWORD \n \n";
+     system("sleep 2");
+} else {
+      echo "Login Succesfully\n";
+     system("clear");
+system("sleep 2");
+
+
+
+echo " ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  ";
+echo ' Website Mu: ';
+$url = trim(fgets(STDIN));
+echo ' Jumlah Visitor: ';
+$max = trim(fgets(STDIN));
 
 error_reporting(0);
 class Random_UA
@@ -240,5 +257,4 @@ class autovisitor extends Random_UA {
 for($i = 1; $i < $max+1; $i++) {
 	$class = new autovisitor($url);
 	echo $i.". VISITOR TERKIRIM MELALUI REFERER - [".$class->jalankan()."\n";
-}
-?>
+}}
