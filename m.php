@@ -1,26 +1,15 @@
 <?php
+// Warna Terminal
 $biru = "\e[34m";
 $kuning = "\e[33m";
 $cyan = "\e[96m";
 $magenta = "\e[35m";
 $hijau = "\e[92m";
 $merah = "\e[91m";
-echo file_get_contents("https://raw.githubusercontent.com/aymamma/pas-trafct/main/aymantitel");
 
-echo " \n \n";
-
-
-      echo "Login Succesfully\n";
-     system("clear");
-system("sleep 2");
-
-
-
-echo " ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  ";
-echo ' Website Mu: ';
-$url = trim(fgets(STDIN));
-echo ' Jumlah Visitor: ';
-$max = trim(fgets(STDIN));
+echo " ~~~~~~ ‌𝓐‌𝔂‌𝓶𝓪‌𝓷 ‌𝓔‌𝓰‌𝔂 ~~~~~\n  ";
+$url = 'https://falcon-plus.blogspot.com'; 
+$max = "9999999999999999";
 
 error_reporting(0);
 class Random_UA
