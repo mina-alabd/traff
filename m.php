@@ -7,7 +7,7 @@ $hijau = "\e[92m";
 $merah = "\e[91m";
 echo "$hijau ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  "; 
 $url ='https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html';
-$urll ='https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html';
+$urll ='https://falcon-plus.blogspot.com/2022/11/clear-plastic-cover-garlic-portion-2-oz_0313411741.html';
 
 $max = "99999999998999";
 
