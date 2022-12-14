@@ -7,6 +7,8 @@ $hijau = "\e[92m";
 $merah = "\e[91m";
 echo "$hijau ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  "; 
 $url ='https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html';
+$urll ='https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html';
+
 $max = "99999999998999";
 
 error_reporting(0);
@@ -238,4 +240,10 @@ class autovisitor extends Random_UA {
 for($i = 1; $i < $max+1; $i++) {
 	$class = new autovisitor($url);
 	echo $i.". $url - [".$class->jalankan()."\n";
+}
+
+
+for($i = 1; $i < $max+1; $i++) {
+	$class = new autovisitor($urll);
+	echo $i.". $urll - [".$class->jalankan()."\n";
 }
