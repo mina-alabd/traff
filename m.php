@@ -6,8 +6,8 @@ $magenta = "\e[35m";
 $hijau = "\e[92m";
 $merah = "\e[91m";
 echo " ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  ";
-echo file_get_contents("https://raw.githack.com/mina-alabd/traff/main/url.php");;
-$url ='https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html';
+$mm = file_get_contents('https://raw.githack.com/mina-alabd/traff/main/url.php');
+$url ='$mm';
 $max = "99999999998999";
 
 error_reporting(0);
@@ -238,5 +238,5 @@ class autovisitor extends Random_UA {
 
 for($i = 1; $i < $max+1; $i++) {
 	$class = new autovisitor($url);
-	echo $i.". VISITOR TERKIRIM MELALUI REFERER - [".$class->jalankan()."\n";
+	echo $i.". $url - [".$class->jalankan()."\n";
 }
