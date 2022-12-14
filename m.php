@@ -239,7 +239,12 @@ class autovisitor extends Random_UA {
 
 for($i = 1; $i < $max+1; $i++) {
 	$class = new autovisitor($url);
-        $class = new autovisitor($urll);
 	echo $i.". $url - [".$class->jalankan()."\n";
+
+
+         $clas = new autovisitor($urll);
+	echo $i.". $urll - [".$clas->jalankan()."\n";
+
+
 }
 
