@@ -5,15 +5,9 @@ $cyan = "\e[96m";
 $magenta = "\e[35m";
 $hijau = "\e[92m";
 $merah = "\e[91m";
-echo file_get_contents("https://raw.githubusercontent.com/aymamma/pas-trafct/main/aymantitel");
-
-echo " \n \n";
-
-
-
 echo " ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  ";
 echo file_get_contents("https://raw.githack.com/mina-alabd/traff/main/url.php");;
-$url = file_get_contents("https://raw.githack.com/mina-alabd/traff/main/url.php");
+$url = file_get_contents('https://raw.githack.com/mina-alabd/traff/main/url.php');
 $max = "99999999998999";
 
 error_reporting(0);
