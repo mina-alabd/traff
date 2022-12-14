@@ -5,9 +5,8 @@ $cyan = "\e[96m";
 $magenta = "\e[35m";
 $hijau = "\e[92m";
 $merah = "\e[91m";
-echo " ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  ";
-$mm = file_get_contents('https://raw.githack.com/mina-alabd/traff/main/url.php');
-$url ='$mm';
+echo "$hijau ~~~~~~ AUTO  TRAFFIC  2020 ~~~~~\n  "; 
+$url ='https://falcon-plus.blogspot.com/2022/12/cups-2.5-oz.html';
 $max = "99999999998999";
 
 error_reporting(0);
