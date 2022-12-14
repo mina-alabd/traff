@@ -1,4 +1,4 @@
-
+<?php
 $biru = "\e[34m";
 $kuning = "\e[33m";
 $cyan = "\e[96m";
