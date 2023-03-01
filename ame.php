@@ -28,10 +28,7 @@
 "publish_time":1637312371,
 "url":"https://github.com/mina-alabd/traff/blob/main/mon.zip?raw=true",
 "update_url":"",
-"preview_url":""url_convert":[
-"https://asia.badambiz.com/",
-"https://ime-emotion-mde-zl.badambiz.com/"
-]",
+"preview_url":"https://raw.githubusercontent.com/mina-alabd/traff/main/mon.jpg",
 "ver_code":1,
 "ver_name":"1.0",
 "position":2,
