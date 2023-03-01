@@ -27,7 +27,7 @@
 "info":"amira_my_Love",
 "publish_time":1637312371,
 "url":"https://github.com/mina-alabd/traff/blob/main/mon.zip?raw=true",
-"update_url":"https://github.com/mina-alabd/traff/raw/main/mon.jpg",
+"update_url":"https://raw.githubusercontent.com/mina-alabd/traff/main/mon.jpg",
 "preview_url":"",
 "ver_code":1,
 "ver_name":"1.0",
@@ -38,6 +38,8 @@
 "vip_only":false,
 "area":"[\"all\"]",
 "url_convert":[
+"https://asia.badambiz.com/",
+"https://ime-emotion-mde-zl.badambiz.com/"
 ]
 },
 
