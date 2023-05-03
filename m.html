@@ -22,70 +22,125 @@
 
     
     
-    
+    <?php
+header("Content-type: application/json");
+
+function ajax($link)
+{
+    $curl = curl_init();
+    $config = array(
+        CURLOPT_URL            => "https://server.famy.ly/clan/signin?_v=1.4.5",
+        CURLOPT_HTTPHEADER     => array(
+            'origin: https://https://server.famy.ly',
+            'referer: https://https://server.famy.ly/',
+            'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'
+        ),
+        CURLOPT_POST           => true,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POSTFIELDS     => 'user_id=' . $link
+    );
+    curl_setopt_array($curl, $config);
+    $result = curl_exec($curl);
+    curl_close($curl);
+
+    return $result;
+}
+
+$idd=$_GET['idd'];
+$chek=$_GET['chek'];
+$userd=$_GET['userd'];
+$userr=$_GET['userr'];
+$namer=$_GET['namer'];
+$userided=$_GET['userided'];
+$nameed=$_GET['nameed'];
+$upd=$_GET['upd'];
+if($userd=="" and $userr=="" and $namer=="" and $userided=="" and $nameed=="" and $upd=="" and $chek==""){
+$hp=scandir("user");
+$arrlength=count($hp);
+
+for($x=2;$x<$arrlength;$x++)
+{
+$a=$hp[$x];
+include_once("user/".$a);
+$bott[] = [
+'userid'=>$uid,
+'name'=>$nemee,
+"sine"=>$sin,
+];
+}
+    print(json_encode($bott, JSON_PRETTY_PRINT));
+}elseif($userd){
+if (file_exists("user/".$userd.".php")) {
+unlink("user/".$userd.".php");
+echo "del Account";
+}else{
+echo "no Account";
+}
+}elseif($userr != ""||$namer != ""){
+$hhh = json_decode(file_get_contents("https://server.famy.ly/rank/userlevel?_v=1.4.1&user_id=".$userr),true);
+if($userr==""||$namer==""){
+echo "Missing submission value";
+}else{
+if(file_exists("./user/".$namer.".php")){
+echo "The account exists" ;
+}else{
+$file = fopen('dm.php',"r");
+$a = fread($file,filesize('dm.php'));
+$as=strtr($a,array("userid"=>$userr,"name"=>$namer,"sine"=>$_GET['sine']));
+$fp = fopen("./user/".$namer.".php",'w');
+fwrite($fp,$as);
+fclose($fp);
+echo "registration success";
+}
+}}elseif($nameed != ""||$userided != ""){
+include_once("./user/".$nameed.".php");
+$file = fopen('dm.php',"r");
+$a = fread($file,filesize('dm.php'));
+$as=strtr($a,array("userid"=>$userided,"name"=>$nameed,"sine"=>$_GET['sine']));
+$fp = fopen("./user/".$nameed.".php",'w');
+fwrite($fp,$as);
+fclose($fp);
+echo "edit ok";
+}elseif($upd){
+$fp = fopen("./id/".$upd.".php",'w');
+echo "【name】 شــۘ❈ــۘآدى 【name】";
+echo "\n";
+echo "【D】off【D】";
+echo "\n";
+echo "【mas】
+تم ايقاف التطبيق
+【mas】";
+echo "\n";
+/*}elseif($upd !="85d52373f448bbd5"){
+echo "【D】on【D】";
+echo "\n";
+echo "【mas】
+تم ايقاف التطبيق
+【mas】";
+echo "\n";*/
+}elseif($chek){
+$cc="".json_decode(ajax($chek), true)["code"]."";
+if($cc== "2031"){
+	$MMG="✅";
+	}elseif($cc== "2033"){
+	$MMG="✳️";
+	}elseif($cc== "1"){
+	$MMG="📛";
+	}elseif($cc== "2035"){
+	$MMG="❎";
+	}
+echo $MMG;
+}
+
+?>
     
     
     
     
     <div class="page">
-
      <h1> منورين </h1>
 
-    
-      
-      
-      
-      
-
-<div id="wrap">
-
-     <h1> منورين احلي شباب  </h1>
-
-     <p id="txt"> والكود </p>
-
-     <button onclick="showstate("gggggf")"> نسخ النص </button>
-
-</div>
-
-<div id="demo"&gt هنا النص المراد نسخة </div>
-
-<input id="btnCopy" type="button" onclick="CopyToClipboard('demo')" value="نسخ"/>
-
-  <script type-text="javascript">
-
-function CopyToClipboard(containerID) {
-
-const range = document.createRange();
-
-range.selectNode(document.getElementById(containerID));
-
-const selection = window.getSelection();
-
-selection.removeAllRanges();
-
-selection.addRange(range);
-
-document.execCommand("copy");
-
-const original = document.getElementById('btnCcopy').value;
-
-let newValue = 'تم النسخ';
-
-document.getElementById("btnCcopy").value = newValue;
-
-setTimeout( function(){
-
-document.getElementById("btnCcopy").value = original;
-
-}, 2000);
-
-}
-
-</script>
-
-    <script src="files/slider.js"></script>
-
-   
+  
 
   </body>
 
